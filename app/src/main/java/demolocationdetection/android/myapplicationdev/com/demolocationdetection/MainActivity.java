@@ -34,7 +34,8 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
-    public void onConnected(@Nullable Bundle bundle) {         int permissionCheck_Coarse = ContextCompat.checkSelfPermission(
+    public void onConnected(@Nullable Bundle bundle) {
+        int permissionCheck_Coarse = ContextCompat.checkSelfPermission(
             MainActivity.this, android.Manifest.permission.ACCESS_COARSE_LOCATION);
         int permissionCheck_Fine = ContextCompat.checkSelfPermission(
                 MainActivity.this, android.Manifest.permission.ACCESS_FINE_LOCATION);
